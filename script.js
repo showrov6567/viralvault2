@@ -26,3 +26,26 @@ referralBtn.addEventListener("click", function(){
     "🔗 Your Referral Link:<br>https://t.me/viralvault2_bot?start=12345";
 
 });
+const taskBtn = document.getElementById("taskBtn");
+const taskBox = document.getElementById("taskBox");
+
+taskBtn.addEventListener("click", function(){
+
+    taskBox.innerHTML = `
+    <div class="card">
+        <h3>📢 Join Our Channel</h3>
+        <p>Complete task and earn 20 Coins</p>
+        <button onclick="completeTask()">Complete</button>
+    </div>
+    `;
+
+});
+
+
+function completeTask(){
+
+    balance += 20;
+    balanceText.innerHTML = balance + " Coins";
+    alert("🎉 Task Completed! You earned 20 Coins");
+
+}
