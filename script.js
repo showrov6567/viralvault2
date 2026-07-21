@@ -17,3 +17,12 @@ rewardBtn.addEventListener("click", function () {
     }
 
 });
+const referralBtn = document.getElementById("referralBtn");
+const referralLink = document.getElementById("referralLink");
+
+referralBtn.addEventListener("click", function(){
+
+    referralLink.innerHTML =
+    "🔗 Your Referral Link:<br>https://t.me/viralvault2_bot?start=12345";
+
+});
