@@ -49,3 +49,29 @@ function completeTask(){
     alert("🎉 Task Completed! You earned 20 Coins");
 
 }
+const adsBtn = document.getElementById("adsBtn");
+const adsBox = document.getElementById("adsBox");
+
+adsBtn.addEventListener("click", function(){
+
+    adsBox.innerHTML = `
+    <div class="card">
+        <h3>📺 Watching Ad...</h3>
+        <p>Please wait 5 seconds</p>
+    </div>
+    `;
+
+    setTimeout(function(){
+
+        balance += 5;
+        balanceText.innerHTML = balance + " Coins";
+
+        adsBox.innerHTML = `
+        <div class="card">
+        🎉 Ad Completed! +5 Coins
+        </div>
+        `;
+
+    },5000);
+
+});
