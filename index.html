@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ViralVault</title>
-  <style>
-    body{
-      background:#111827;
-      color:white;
-      font-family:Arial,sans-serif;
-      text-align:center;
-      padding:40px;
-    }
-    h1{
-      color:#00e676;
-    }
-    button{
-      background:#00e676;
-      border:none;
-      padding:15px 30px;
-      border-radius:10px;
-      font-size:18px;
-      cursor:pointer;
-    }
-  </style>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>🚀 ViralVault</h1>
-<p>Welcome to our Telegram Mini App.</p>
+<div class="container">
+  <h1>🚀 ViralVault</h1>
 
-<button>Start</button>
+  <div class="card">
+    <h2>Balance</h2>
+    <p>0 Coins</p>
+  </div>
+
+  <button id="rewardBtn">
+    🎁 Daily Reward
+  </button>
+
+  <button>
+    👥 Referral
+  </button>
+
+  <button>
+    📋 Tasks
+  </button>
+
+  <button>
+    💸 Withdraw
+  </button>
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
